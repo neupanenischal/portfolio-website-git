@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Nischal</div>
+        <div> 
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Project">Project</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">nischal</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links"> 
+                
+                    <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#Project" onclick="toggleMenu()">Project</a></li>
+                    <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>   
+                   
+                </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="pic-section-container">
+            <img src="./assets/profile-pic.png" alt="picture">
+
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"> Hello</p>
+            <h1 class="title">Nischal Neupane</h1>
+            <p class="section__text__p2"> developer </p>
+            <div class="btn-container">
+                <button  class="btn btn-color-2" 
+                onclick="window.open('./assets/resume-example.pdf')"> my resume</button>
+                </button>
+                <button  class="btn btn-color-1" 
+                onclick="location.href='./#Contact'"> Contact info</button>
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="linkedin" class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/nisclneupane79/'">
+                <img src="./assets/github.png" alt="github"
+                 class="icon" onclick="location.href='https://github.com/neupanenischal'">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html> 
