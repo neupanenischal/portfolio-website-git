@@ -149,7 +149,7 @@ section{
     width: 400px;
     margin: auto 0;
 }
-.pic-section-container img{
+.pic-section-container #profile-pic{
     border-radius: 50%;
 }
 .section__text{
@@ -214,4 +214,48 @@ section{
 }
 .btn-container{
     gap: 1rem;
+}
+/* about */
+#about{
+    position: relative;
+}
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+.about-containers, .about-details-container{
+    display: flex;
+
+}
+.about-pic{
+    border-radius: 2rem;
+}
+.icon_arrow{
+    position: absolute;
+    right: 5rem;
+    bottom: 0.5rem;
+   height: 2rem;
+}
+.details-container{
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53)0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+.pic-section-container{
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
 }
