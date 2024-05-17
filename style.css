@@ -351,13 +351,19 @@ footer {
     margin: 0 1rem;
 }
 /* scroll pop up animation */
-.hidden {
+section {
+   
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(100px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.visible {
+section.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+section.hidden {
+    opacity: 0;
+    transform: translateY(100px);
 }

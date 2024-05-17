@@ -4,16 +4,19 @@ function toggleMenu() {
     menu.classList.toggle('open');
     icon.classList.toggle('open');
 }
-// scroll pop up Animation
+// scroll pop up Animation Intersection Observer API
 document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
+                entry.target.classList.remove("hidden");
+            } else {
+                entry.target.classList.remove("visible");
+                entry.target.classList.add("hidden");
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.3 });
 
     document.querySelectorAll("section").forEach(section => {
         observer.observe(section);
